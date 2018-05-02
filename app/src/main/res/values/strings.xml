@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Ejemplo</string>
+    <string name="action_settings">Configuración</string>
+    <string name="saludo">Hola mundo</string>
+    <string name="title_activity_actividad_tres">ActividadTres</string>
+</resources>
