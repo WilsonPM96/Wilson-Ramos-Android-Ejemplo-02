@@ -37,7 +37,9 @@ class MainActivity : AppCompatActivity() {
                 .setOnClickListener { view: View ->
                     irAActividadDos()
                 }
-
+        spinner_button.setOnClickListener{view: View ->
+            irASpiner()
+        }
 
     }
 
@@ -60,6 +62,10 @@ class MainActivity : AppCompatActivity() {
     fun irAActividadDos() {
         val intent = Intent(this, ActividadDos::class.java)
         intent.putExtra("nombre", "Wilson")
+        startActivity(intent)
+    }
+    fun irASpiner() {
+        val intent = Intent(this, SpinnerActivity::class.java)
         startActivity(intent)
     }
     companion object {
