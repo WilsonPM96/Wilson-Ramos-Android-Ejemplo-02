@@ -15,6 +15,7 @@ import android.view.View
 
 import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.content_main.*
+import java.util.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -40,6 +41,9 @@ class MainActivity : AppCompatActivity() {
         spinner_button.setOnClickListener{view: View ->
             irASpiner()
         }
+        boton_ciclo_vida.setOnClickListener{view: View ->
+            irACicloVida()
+        }
 
     }
 
@@ -62,6 +66,12 @@ class MainActivity : AppCompatActivity() {
     fun irAActividadDos() {
         val intent = Intent(this, ActividadDos::class.java)
         intent.putExtra("nombre", "Wilson")
+        startActivity(intent)
+    }
+    fun irACicloVida() {
+        val intent = Intent(this, CicloVidaActivity::class.java)
+        val nuevoUsuario = UsuarioParcelable("Wilson", 5, Date(), false)
+        intent.putExtra("usuario-intent", nuevoUsuario)
         startActivity(intent)
     }
     fun irASpiner() {
