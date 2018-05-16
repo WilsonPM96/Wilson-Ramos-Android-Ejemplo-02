@@ -45,6 +45,14 @@ class MainActivity : AppCompatActivity() {
             irACicloVida()
         }
 
+        boton_fragment.setOnClickListener{view: View ->
+            irAFragmentos()
+        }
+
+        boton_sqlite.setOnClickListener{view: View ->
+            irASQLITE()
+        }
+
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -78,6 +86,16 @@ class MainActivity : AppCompatActivity() {
         val intent = Intent(this, SpinnerActivity::class.java)
         startActivity(intent)
     }
+
+    fun irAFragmentos() {
+        val intent = Intent(this, FragmentActivity::class.java)
+        startActivity(intent)
+    }
+    fun irASQLITE() {
+        val intent = Intent(this, SQliteActivity::class.java)
+        startActivity(intent)
+    }
+
     companion object {
         val RESULTADO_PERMISO_CAMARA = 1
     }
