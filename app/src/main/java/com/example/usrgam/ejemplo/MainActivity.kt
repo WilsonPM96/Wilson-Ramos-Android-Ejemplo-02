@@ -52,6 +52,12 @@ class MainActivity : AppCompatActivity() {
         boton_sqlite.setOnClickListener{view: View ->
             irASQLITE()
         }
+        boton_menu.setOnClickListener{view: View ->
+            irAMenu()
+        }
+        boton_dialogo.setOnClickListener{view: View ->
+            irADialogo()
+        }
 
     }
 
@@ -93,6 +99,15 @@ class MainActivity : AppCompatActivity() {
     }
     fun irASQLITE() {
         val intent = Intent(this, SQliteActivity::class.java)
+        startActivity(intent)
+    }
+
+    fun irAMenu() {
+        val intent = Intent(this, MenuActivity::class.java)
+        startActivity(intent)
+    }
+    fun irADialogo() {
+        val intent = Intent(this, DialogoActivity::class.java)
         startActivity(intent)
     }
 

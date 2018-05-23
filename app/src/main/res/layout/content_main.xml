@@ -108,4 +108,27 @@
         app:layout_constraintTop_toTopOf="@+id/boton_ciclo_vida"
         app:layout_constraintVertical_bias="1.0" />
 
+    <Button
+        android:id="@+id/boton_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Menus"
+        app:layout_constraintEnd_toEndOf="@+id/boton_fragment"
+        app:layout_constraintStart_toStartOf="@+id/boton_fragment"
+        app:layout_constraintTop_toBottomOf="@+id/boton_fragment" />
+
+    <Button
+        android:id="@+id/boton_dialogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Dialogo"
+        app:layout_constraintEnd_toEndOf="@+id/boton_sqlite"
+        app:layout_constraintStart_toStartOf="@+id/boton_sqlite"
+        app:layout_constraintTop_toBottomOf="@+id/boton_sqlite" />
+
 </android.support.constraint.ConstraintLayout>
